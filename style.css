@@ -259,7 +259,6 @@ a { text-decoration: none; color: inherit; }
     visibility: hidden;
   }
   .nav-links.open { transform: translateY(0); visibility: visible; }
-  .nav-links.open { transform: translateY(0); }
   .nav-links li { width: 100%; text-align: center; }
   .nav-links a {
     display: block; padding: 14px 0; font-size: 0.95rem; color: #333 !important;
