@@ -6,23 +6,22 @@
   <title>Ambient Digital</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="logo.svg" type="image/svg+xml">
 </head>
 <body>
 
-  <!-- Navigation -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="#home" class="nav-logo">
         <img src="logo.svg" alt="Ambient Digital" class="nav-logo-img">
         <span class="logo-text">Ambient Digital</span>
       </a>
-      <ul class="nav-links">
+      <ul class="nav-links" id="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#contact" class="nav-cta">Contact Us</a></li>
       </ul>
       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
         <span></span>
@@ -32,119 +31,123 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
   <section class="hero" id="home">
-    <div class="hero-overlay"></div>
+    <div class="hero-bg"></div>
     <div class="hero-content">
-      <h1 class="hero-title">Ambient Digital</h1>
-      <p class="hero-subtitle">Innovative solutions for industrial applications</p>
-      <a href="#about" class="hero-cta">Learn More</a>
+      <p class="hero-tag">Industrial Technology</p>
+      <h1 class="hero-title">Building the future of<br>industrial software</h1>
+      <p class="hero-subtitle">We develop AI-powered tools and software packages for industrial applications — from predictive analytics to intelligent monitoring systems.</p>
+      <div class="hero-actions">
+        <a href="#about" class="btn btn-primary">What We Do</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
     </div>
   </section>
 
-  <!-- About Section -->
   <section class="about" id="about">
     <div class="container">
-      <h2 class="section-title">Who We Are</h2>
-      <div class="about-content">
-        <div class="about-text">
-          <p>
-            Ambient Digital is a startup developing a wide range of products mainly for industrial applications.
-            We combine cutting-edge technology with practical engineering to deliver solutions that make a real difference.
-          </p>
-          <p>
-            Our team is passionate about innovation and committed to building reliable, high-quality products
-            that help industries operate more efficiently and sustainably.
-          </p>
+      <div class="section-header">
+        <p class="section-tag">What We Do</p>
+        <h2 class="section-title">Technology for industry</h2>
+        <p class="section-subtitle">Ambient Digital is a startup developing a wide range of products for industrial applications. We combine AI, modern software engineering, and deep domain expertise to build tools that help industries work smarter.</p>
+      </div>
+      <div class="features">
+        <div class="feature">
+          <div class="feature-icon">
+            <svg viewBox="0 0 32 32" fill="none" stroke="#5a7db5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="5" width="24" height="18" rx="2"/>
+              <path d="M4 20h24"/>
+              <path d="M13 23h6"/>
+              <path d="M11 12l3 3-3 3"/>
+              <path d="M17 18h6"/>
+            </svg>
+          </div>
+          <h3>Software Packages</h3>
+          <p>Production-ready tools and libraries built for industrial-grade reliability and performance.</p>
         </div>
-        <div class="about-features">
-          <div class="feature-card">
-            <div class="feature-icon">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="20" cy="20" r="18" stroke="#0f3460" stroke-width="1.5" fill="none"/>
-                <path d="M20 10v6l4 2" stroke="#0f3460" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M13 24c0-3.87 3.13-7 7-7s7 3.13 7 7" stroke="#0f3460" stroke-width="1.5" stroke-linecap="round"/>
-                <circle cx="20" cy="24" r="2" fill="#0f3460"/>
-                <path d="M12 30h16" stroke="#0f3460" stroke-width="1.5" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <h3>Innovation</h3>
-            <p>Pushing boundaries with cutting-edge technology</p>
+        <div class="feature">
+          <div class="feature-icon">
+            <svg viewBox="0 0 32 32" fill="none" stroke="#5a7db5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="16" cy="16" r="3"/>
+              <path d="M16 4v4"/>
+              <path d="M16 24v4"/>
+              <path d="M4 16h4"/>
+              <path d="M24 16h4"/>
+              <path d="M7.5 7.5l2.8 2.8"/>
+              <path d="M21.7 21.7l2.8 2.8"/>
+              <path d="M7.5 24.5l2.8-2.8"/>
+              <path d="M21.7 10.3l2.8-2.8"/>
+              <circle cx="16" cy="16" r="9"/>
+            </svg>
           </div>
-          <div class="feature-card">
-            <div class="feature-icon">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="4" y="18" width="10" height="14" rx="1" stroke="#0f3460" stroke-width="1.5"/>
-                <rect x="15" y="12" width="10" height="20" rx="1" stroke="#0f3460" stroke-width="1.5"/>
-                <rect x="26" y="8" width="10" height="24" rx="1" stroke="#0f3460" stroke-width="1.5"/>
-                <line x1="7" y1="22" x2="11" y2="22" stroke="#0f3460" stroke-width="1"/>
-                <line x1="7" y1="25" x2="11" y2="25" stroke="#0f3460" stroke-width="1"/>
-                <line x1="18" y1="16" x2="22" y2="16" stroke="#0f3460" stroke-width="1"/>
-                <line x1="18" y1="19" x2="22" y2="19" stroke="#0f3460" stroke-width="1"/>
-                <line x1="29" y1="12" x2="33" y2="12" stroke="#0f3460" stroke-width="1"/>
-                <line x1="29" y1="15" x2="33" y2="15" stroke="#0f3460" stroke-width="1"/>
-                <path d="M2 32h36" stroke="#0f3460" stroke-width="1.5" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <h3>Industrial Focus</h3>
-            <p>Purpose-built solutions for real-world challenges</p>
+          <h3>AI &amp; Analytics</h3>
+          <p>Intelligent systems for predictive maintenance, real-time monitoring, and process optimization.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">
+            <svg viewBox="0 0 32 32" fill="none" stroke="#5a7db5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="6" y="4" width="20" height="7" rx="1.5"/>
+              <rect x="6" y="13" width="20" height="7" rx="1.5"/>
+              <rect x="6" y="22" width="20" height="7" rx="1.5"/>
+              <circle cx="10" cy="7.5" r="1" fill="#5a7db5" stroke="none"/>
+              <circle cx="10" cy="16.5" r="1" fill="#5a7db5" stroke="none"/>
+              <circle cx="10" cy="25.5" r="1" fill="#5a7db5" stroke="none"/>
+              <path d="M14 7.5h8"/>
+              <path d="M14 16.5h8"/>
+              <path d="M14 25.5h6"/>
+            </svg>
           </div>
-          <div class="feature-card">
-            <div class="feature-icon">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="20" cy="16" r="6" stroke="#0f3460" stroke-width="1.5"/>
-                <path d="M16 16h8" stroke="#0f3460" stroke-width="1" stroke-linecap="round"/>
-                <path d="M20 12v8" stroke="#0f3460" stroke-width="1" stroke-linecap="round"/>
-                <path d="M20 22v4" stroke="#0f3460" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M14 30l6-4 6 4" stroke="#0f3460" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M14 30v4" stroke="#0f3460" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M26 30v4" stroke="#0f3460" stroke-width="1.5" stroke-linecap="round"/>
-                <circle cx="20" cy="16" r="2" fill="#0f3460" opacity="0.15"/>
-              </svg>
-            </div>
-            <h3>Engineering</h3>
-            <p>Reliable products backed by solid engineering</p>
-          </div>
+          <h3>Industrial Systems</h3>
+          <p>Scalable infrastructure and platforms designed for demanding operational environments.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
   <section class="contact" id="contact">
     <div class="container">
-      <h2 class="section-title">Contact Us</h2>
-      <p class="section-description">Have a question or want to work with us? Fill out the form below and we'll get back to you.</p>
-      <div class="form-wrapper">
-        <iframe
-          id="ms-form"
-          width="100%"
-          height="600"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-          title="Contact Form"
-          src="https://forms.office.com/r/sMSRdEctXW"
-          style="border: none; border-radius: 12px; background: #fff;"
-          allowfullscreen>
-          Loading…
-        </iframe>
-        <noscript>
-          <p>Please enable JavaScript to view the contact form, or email us directly at
-            <a href="mailto:info@ambient-digital.com">info@ambient-digital.com</a>.
-          </p>
-        </noscript>
-        <p class="email-fallback">
-          Or email us directly at <a href="mailto:info@ambient-digital.com">info@ambient-digital.com</a>
-        </p>
+      <div class="contact-layout">
+        <div class="section-header">
+          <p class="section-tag">Contact</p>
+          <h2 class="section-title">Get in touch</h2>
+          <p class="section-subtitle">Have a question or want to work with us? We'd love to hear from you.</p>
+          <div class="contact-info">
+            <a href="mailto:info@ambient-digital.com" class="contact-link">
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="16" height="12" rx="2"/><path d="M2 4l8 6 8-6"/></svg>
+              info@ambient-digital.com
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@company.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What is this about?">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project or question..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-submit" id="submit-btn">Send Message</button>
+          <p class="form-status" id="form-status"></p>
+        </form>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 Ambient Digital. All Rights Reserved.</p>
+    <div class="container footer-inner">
+      <span>&copy; 2026 Ambient Digital</span>
+      <a href="mailto:info@ambient-digital.com">info@ambient-digital.com</a>
     </div>
   </footer>
 
