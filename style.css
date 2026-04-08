@@ -266,7 +266,8 @@ a { text-decoration: none; color: inherit; }
   .nav-links a:hover { color: #111 !important; }
   .nav-cta { border: none !important; }
 
-  .hero { padding: 120px 20px 80px; }
+  .hero { padding: 120px 20px 80px; min-height: 0; }
+  .hero-bg { background-position: center center; }
   .hero-title br { display: none; }
   .features { grid-template-columns: 1fr; gap: 36px; }
   .about { padding: 80px 0; }
